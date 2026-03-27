@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    padding: 20px;
+}
+
+.main{
+    border: 2px solid orange;
+    border-radius: 2rem;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 450px;
+    background-color: #7BAAD4;
+    padding: 20px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input{
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    background-color: orange;
+    height: 45px;
+    width: 70%;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 15px;
+    color: red; 
+}
+
+button{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: none;
+    color: red;
+    background-color: black;
+    cursor: pointer;
+}
+
+.weather{
+    margin-top: 20px;
+    display: none;
+}
+
+.weather-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-icon{
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.temp{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.city{
+    text-align: center;
+    font-size: 24px;
+    color: red;
+    margin-top: 5px;
+}
+
+.images{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+    flex-wrap: nowrap;
+}
+
+.hum, .rainfall{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255,255,255,0.2);
+    padding: 12px 15px;
+    border-radius: 1rem;
+    min-width: 160px;
+    justify-content: center;
+}
+
+.small-icon{
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
+.inside h1{
+    font-size: 18px;
+}
+
+.para{
+    font-size: 12px;
+}
+
+@media (max-width: 480px){
+
+    .main{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .main-icon{
+        height: 120px;
+    }
+
+    .temp{
+        font-size: 35px;
+    }
+
+    .city{
+        font-size: 20px;
+    }
+
+    .images{
+        flex-direction: column;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .hum, .rainfall{
+        width: 100%;
+        justify-content: center;
+    }
+}
+.error{
+    text-align: left;
+    margin-left: 50px;
+    font-size: 15px;
+    margin-top: 20px;
+    display: none;
+}
